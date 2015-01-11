@@ -9,7 +9,6 @@ This is a Javascript / AngularJS webapp that provides geocoding and weather info
 - Node.js
 - npm install -g bower grunt-cli
 
-For running "compass:server" (compass) task:
 - Ruby
 - gem install compass
 
@@ -24,15 +23,18 @@ bower install
 grunt serve
 ```
 
-## Building the distribution:
+## Building for distribution/deployment:
 
-The following will build all source files and place them in the `dist`
+The following command will build all source files and place them in the `dist`
 directory.
 
 ```
-grunt --force
+grunt
 ```
 
 ## Running Tests
 
-- grunt karma:unit
+```
+grunt karma:unit
+```
+
