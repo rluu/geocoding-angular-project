@@ -24,6 +24,15 @@ bower install
 grunt serve
 ```
 
+## Building the distribution:
+
+The following will build all source files and place them in the `dist`
+directory.
+
+```
+grunt --force
+```
+
 ## Running Tests
 
-* grunt karma:unit
+- grunt karma:unit

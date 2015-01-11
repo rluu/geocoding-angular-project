@@ -2,6 +2,13 @@
 .idea/workspace.xml
 
 # Ignore components installed by bower and npm. 
-bower_components
-node_modules
+bower_components/
+node_modules/
+
+# Ignore some build artifacts.
+.sass-cache/
+.tmp/
+
+# Ignore the files built for distribution.
+dist/
 
