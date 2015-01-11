@@ -1,0 +1,46 @@
+
+<div>
+  <h3>Geocode</h3>
+
+  <h4>Search for a city:</h4>
+
+    <input type="text" ng-model="asyncSelected" placeholder="City name"
+           typeahead="address for address in getLocation($viewValue)"
+           typeahead-loading="loadingLocations"
+           class="form-control">
+
+    <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+
+  <!-- <pre>Model: {{asyncSelected | json}}</pre> -->
+  <div class="container">
+  <div ng-show="!!cities.length" class="row">
+
+  <h4>Asynchronous search results:</h4>
+  <table border="1" class="table table-bordered">
+    <tr>
+      <th>Name:</th>
+      <th>Latitude:</th>
+      <th>Longitude:</th>
+    </tr>
+        <tr data-ng-repeat="city in cities">
+          <td>{{ city.formatted_address }}</td>
+          <td>{{ city.geometry.location.lat }}</td>
+          <td>{{ city.geometry.location.lng }}</td>
+        </tr>
+  </table>
+  </div>
+  </div>
+
+  <br />
+</div>
+
+<!--  Why does this not work?
+<div data-ng-repeat="city in cities">
+  <tr>
+    <td>{{ city.formatted_address }}</td>
+    <td>{{ city.geometry.location.lat }}</td>
+    <td>{{ city.geometry.location.lng }}</td>
+  </tr>
+</div>
+  -->
+

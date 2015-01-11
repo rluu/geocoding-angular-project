@@ -1,0 +1,7 @@
+# Ignore files from WebStorm.
+.idea/workspace.xml
+
+# Ignore components installed by bower and npm. 
+bower_components
+node_modules
+
