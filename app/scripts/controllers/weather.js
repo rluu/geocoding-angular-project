@@ -39,20 +39,10 @@ angular.module('geocodingAngularProjectApp')
         .filter('cityid', function() {
             var toStateProvince = function(cityid) {
               // TODO: Enter some code here.
-                return kelvin - 273.15;
+                return cityid;
             };
   // TODO: Remove/fix this method.
-            return function(kelvin, units) {
-                switch (units) {
-                    case 'imperial':
-                        return toFahrenheit(kelvin);
-                    case 'metric':
-                        return toCelsius(kelvin);
-                    default:
-                        console.error('Unknown unit type for weather temperature.');
-                        //return input;
-                        return '';
-                }
+            return function() {
             };
         });
 
