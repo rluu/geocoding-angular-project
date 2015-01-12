@@ -12,7 +12,7 @@
  */
 angular.module('geocodingAngularProjectApp')
   .controller('GeocodeCtrl', ['$scope', '$http', function ($scope, $http) {
-    console.log('Constructing the GeocodeCtrl controller!');
+    //console.log('DEBUG: Constructing the GeocodeCtrl controller!');
 
     // Country bias for search results.
     // Default is 'US' (United States of America).
@@ -33,7 +33,7 @@ angular.module('geocodingAngularProjectApp')
         $scope.cities = response.data.results;
 
         return response.data.results.map(function(item){
-          console.log(item);
+          //console.log(item);
           return item.formatted_address;
         });
       });
@@ -43,9 +43,4 @@ angular.module('geocodingAngularProjectApp')
       $scope.getLocation($scope.asyncSelected);
     });
 
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   }]);

@@ -9,11 +9,6 @@
  */
 angular.module('geocodingAngularProjectApp')
   .controller('AboutCtrl', function ($scope) {
-    console.log('Constructing the AboutCtrl controller!');
+    //console.log('DEBUG: Constructing the AboutCtrl controller!');
 
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   });

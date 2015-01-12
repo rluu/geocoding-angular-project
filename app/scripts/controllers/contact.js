@@ -9,6 +9,6 @@
  */
 angular.module('geocodingAngularProjectApp')
   .controller('ContactCtrl', function () {
-    console.log('Constructing the ContactCtrl controller!');
+    //console.log('DEBUG: Constructing the ContactCtrl controller!');
 
   });
